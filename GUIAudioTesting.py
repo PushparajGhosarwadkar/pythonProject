@@ -59,13 +59,13 @@ ansT.place(x=210, y=550)
 ClearIT_text = Label(window3, text="ClearIt :", bg='pink', foreground="brown",font=("Times New Roman", 50, "bold")).place(x=520, y=30)
 InterviewBot_text = Label(window3, text="InterviewBot", bg='pink',foreground="brown", font=("Times New Roman", 50, "bold")).place(x=620, y=100)
 
+
 #adding logo
-logo = Image.open("ClearIT [Logo].png")
+logo = Image.open("ClearITFinal.png")
 test = ImageTk.PhotoImage(logo)
 label_logo = tkinter.Label(image=test)
 label_logo.image = test
 label_logo.place(x=1200, y=60)
-
 
 #Cosine Function
 def cos(Original, User):

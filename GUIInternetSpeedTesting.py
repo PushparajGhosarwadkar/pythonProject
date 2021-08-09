@@ -17,7 +17,7 @@ parent.title("Internet Speed Test")   #title of parent window
 ClearIT_text = Label( text="ClearIt :", bg='pink', foreground="brown",font=("Times New Roman", 50, "bold")).place(x=520, y=30)
 InterviewBot_text = Label( text="InterviewBot", bg='pink',foreground="brown", font=("Times New Roman", 50, "bold")).place(x=620, y=100)
 
-logo = Image.open("ClearIT [Logo].png")
+logo = Image.open("ClearITFinal.png")
 test = ImageTk.PhotoImage(logo)
 label_logo = tkinter.Label(image=test)
 label_logo.image = test

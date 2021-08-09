@@ -58,7 +58,7 @@ Rules = Label(window3, text=rule3, bg='pink', font=("Times New Roman", 22)).plac
 
 
 #adding logo
-logo = Image.open("ClearIT [Logo].png")
+logo = Image.open("ClearITFinal.png")
 test = ImageTk.PhotoImage(logo)
 label_logo = tkinter.Label(image=test)
 label_logo.image = test

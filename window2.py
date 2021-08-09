@@ -17,6 +17,7 @@ label1 = tkinter.Label(image=test)
 label1.image = test
 label1.place(x=1250, y=50)
 
+
 E1 = StringVar()  # creating instance of class StringVar
 E2 = StringVar()
 E3 = StringVar()

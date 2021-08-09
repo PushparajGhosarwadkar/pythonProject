@@ -34,12 +34,12 @@ from datetime import datetime
 
 # variables for important parameters
 
-QuestionNo =2
+QuestionNo =1
 TimeToAnswer = 4
 delay = TimeToAnswer
 AskHRQues = 1
-Hr_Ques = 2
-Cv_Ques = 2
+Hr_Ques = 1
+Cv_Ques = 1
 
 # labels lists for answers and questions and cosine values
 QuestionsList = []
@@ -55,7 +55,7 @@ mydoc = docx.Document()
 
 # importing 1st page
 
-mydoc = docx.Document("Report.docx")
+#mydoc = docx.Document("Report.docx")
 mydoc.add_page_break()
 mydoc.add_heading("ClearIT : InterviewBot", 1)
 
@@ -119,13 +119,14 @@ ClearIT_text = Label(window3, text="ClearIt :", bg='pink', foreground="brown",
 InterviewBot_text = Label(window3, text="InterviewBot", bg='pink', foreground="brown",
                           font=("Times New Roman", 50, "bold")).place(x=580, y=220)
 
+
+
 #adding logo
-logo = Image.open("ClearIT [Logo].png")
+logo = Image.open("ClearITFinal.png")
 test = ImageTk.PhotoImage(logo)
 label_logo = tkinter.Label(image=test)
 label_logo.image = test
 label_logo.place(x=100, y=60)
-
 
 
 # Cosine Function
@@ -413,8 +414,6 @@ def report():
         mydoc.add_paragraph(" ")
         para3 = mydoc.add_heading("ALL THE VERY BEST !!", 3)
         para3.alignment = 1
-
-
 
     mydoc.add_page_break()
     questionsinreport()

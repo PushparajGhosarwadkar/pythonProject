@@ -11,11 +11,20 @@ window1.geometry("{0}x{1}+0+0".format(window1.winfo_screenwidth(), window1.winfo
 window1.configure(bg='pink')         #setting background colour
 window1.title("Registration Form")   #title of parent window
 
-logo = Image.open("ClearIT [Logo].png")
+
+'''
+#changes done from here on 9/8/21
+img = ImageTk.PhotoImage(Image.open('luck.jpeg'))
+panel = Tk.Label(window1, image = img)
+panel.pack(side = "bottom", fill = "both", expand = "yes")
+'''
+
+logo = Image.open("luck.png")
 test = ImageTk.PhotoImage(logo)
 label1 = tkinter.Label(image=test)
 label1.image = test
 label1.place(x=1200, y=50)
+
 
 Label(window1, text="Welcome to ClearIt Mock Interview", bg='pink', font=("Times New Roman", 25)).place(x=480, y=100)
 Label(window1, text="Instructions:", bg='pink', font=("Times New Roman", 20)).place(x=220, y=170)
